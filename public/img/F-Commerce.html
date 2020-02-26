@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://localhost:8000/shop/1 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>F-Commerce</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="./F-Commerce_files/bootstrap.min.css" rel="stylesheet">
+	
+    <!-- MetisMenu CSS -->
+    <link href="./F-Commerce_files/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="./F-Commerce_files/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="./F-Commerce_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->    </head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- Collapsed Hamburger -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- Branding Image -->
+                <a class="navbar-brand" href="http://localhost:8000/">
+                    <img src="./F-Commerce_files/logof.png" width="150" height="45">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                <!-- Left Side Of Navbar -->
+                <ul class="nav navbar-nav in">
+                    <li><a href="http://localhost:8000/shop/1" class="active">ร้านค้า</a></li>
+                    <li><a href="http://localhost:8000/" target="_blank" class="active">เว็บไซต์</a></li>
+                    <li><a href="http://localhost:8000/shop/1/paymenting">วิธีการชำระเงิน</a></li>
+                    <li><a href="http://localhost:8000/" target="_blank" class="active">ยืนยันการชำระเงิน</a></li>
+                    
+                </ul>
+
+                <!-- Right Side Of Navbar -->
+                <ul class="nav navbar-nav navbar-right in">
+                    <li><a href="http://localhost:8000/shop/1/register-dealer">สมัครตัวแทนจำหน่าย</a></li>
+                    <li><a href="http://localhost:8000/shop/1" class="active">เข้าสู่ระบบตัวแทนจำหน่าย</a></li>
+                    <li>
+                        <a href="http://localhost:8000/shop/1/cart-order">
+                           <span class="glyphicon glyphicon-shopping-cart"></span>
+                           <span class="badge"></span> 
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-form navbar-right">
+                    <li id="padding-nav-shop">
+                        <div>
+                        <select class="form-control" id="selectType">
+                            <option value="0">-- หมวดหมู่สินค้า --</option>
+                        </select>
+                        </div>
+                    </li>
+                    <li id="padding-nav-shop">
+                        <form method="get" action="http://localhost:8000/shop/1/search-product">
+                            <div class="input-group">
+                                <input type="text" name="search_product" class="form-control" placeholder="ค้นหา...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" id="contentLayout">
+        
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+
+                    
+    <div class="row" id="show-product-shop">
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                            <li class="col-lg-4 col-sm-4">
+                    <a href="http://localhost:8000/shop/1/view/1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="./F-Commerce_files/1487100954.jpg" height="250" width="100%" id="img-product-shop">
+                                    </div>
+                                </div>
+                                <div class="row" id="name-product-shop">
+                                    <div class="col-xs-12 col-sm-12">
+                                                                             Asus Zenbook UX310UQ-GL008T ...
+                                                                        </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row" id="price-product-shop">
+                                    <div class="col-xs-12">
+                                        36,790.00 บาท
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    <!-- <a href="/shop/1/view/1">
+                        <p><img src="/images/product/1487100954.jpg" height="250" width="100%" id="img-product-shop"></p>
+                        <p id="name-product-shop" maxlength="10"> Asus Zenbook UX310UQ-GL008T </p>
+                        <p id="price-product-shop">36,790.00</p>
+                    </a> -->
+                </li>  
+                            <li class="col-lg-4 col-sm-4">
+                    <a href="http://localhost:8000/shop/1/view/2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="./F-Commerce_files/1487299549.jpg" height="250" width="100%" id="img-product-shop">
+                                    </div>
+                                </div>
+                                <div class="row" id="name-product-shop">
+                                    <div class="col-xs-12 col-sm-12">
+                                                                            AOC I2281FWH 22" Monitor...
+                                                                        </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row" id="price-product-shop">
+                                    <div class="col-xs-12">
+                                        4,190.00 บาท
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    <!-- <a href="/shop/1/view/2">
+                        <p><img src="/images/product/1487299549.jpg" height="250" width="100%" id="img-product-shop"></p>
+                        <p id="name-product-shop" maxlength="10">AOC I2281FWH 22&quot; Monitor</p>
+                        <p id="price-product-shop">4,190.00</p>
+                    </a> -->
+                </li>  
+                            <li class="col-lg-4 col-sm-4">
+                    <a href="http://localhost:8000/shop/1/view/3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="./F-Commerce_files/1487299682.jpg" height="250" width="100%" id="img-product-shop">
+                                    </div>
+                                </div>
+                                <div class="row" id="name-product-shop">
+                                    <div class="col-xs-12 col-sm-12">
+                                                                             LG MONITOR 23 INCH LED IPS 23MP68VQ-P...
+                                                                        </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row" id="price-product-shop">
+                                    <div class="col-xs-12">
+                                        5,180.00 บาท
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    <!-- <a href="/shop/1/view/3">
+                        <p><img src="/images/product/1487299682.jpg" height="250" width="100%" id="img-product-shop"></p>
+                        <p id="name-product-shop" maxlength="10"> LG MONITOR 23 INCH LED IPS 23MP68VQ-P</p>
+                        <p id="price-product-shop">5,180.00</p>
+                    </a> -->
+                </li>  
+                            <li class="col-lg-4 col-sm-4">
+                    <a href="http://localhost:8000/shop/1/view/4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="./F-Commerce_files/1487299821.jpg" height="250" width="100%" id="img-product-shop">
+                                    </div>
+                                </div>
+                                <div class="row" id="name-product-shop">
+                                    <div class="col-xs-12 col-sm-12">
+                                                                            HP 24es IPS LED Display (Silver)...
+                                                                        </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row" id="price-product-shop">
+                                    <div class="col-xs-12">
+                                        4,990.00 บาท
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    <!-- <a href="/shop/1/view/4">
+                        <p><img src="/images/product/1487299821.jpg" height="250" width="100%" id="img-product-shop"></p>
+                        <p id="name-product-shop" maxlength="10">HP 24es IPS LED Display (Silver)</p>
+                        <p id="price-product-shop">4,990.00</p>
+                    </a> -->
+                </li>  
+                            <li class="col-lg-4 col-sm-4">
+                    <a href="http://localhost:8000/shop/1/view/5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="./F-Commerce_files/1487299957.jpg" height="250" width="100%" id="img-product-shop">
+                                    </div>
+                                </div>
+                                <div class="row" id="name-product-shop">
+                                    <div class="col-xs-12 col-sm-12">
+                                                                            niceEshop โปรแกรมได้มีสายเมาส์เล่นเกม 10 ปุ่ม Comb...
+                                                                        </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row" id="price-product-shop">
+                                    <div class="col-xs-12">
+                                        660.00 บาท
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    <!-- <a href="/shop/1/view/5">
+                        <p><img src="/images/product/1487299957.jpg" height="250" width="100%" id="img-product-shop"></p>
+                        <p id="name-product-shop" maxlength="10">niceEshop โปรแกรมได้มีสายเมาส์เล่นเกม 10 ปุ่ม Combaterwing 4800 DPI Optical สายการเล่นเกมมืออาชีพเมาส์สีดำ</p>
+                        <p id="price-product-shop">660.00</p>
+                    </a> -->
+                </li>  
+                            <li class="col-lg-4 col-sm-4">
+                    <a href="http://localhost:8000/shop/1/view/6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="./F-Commerce_files/1487300072.jpg" height="250" width="100%" id="img-product-shop">
+                                    </div>
+                                </div>
+                                <div class="row" id="name-product-shop">
+                                    <div class="col-xs-12 col-sm-12">
+                                                                             2.4Ghz Mini portable Wireless Optical Gaming Mous...
+                                                                        </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row" id="price-product-shop">
+                                    <div class="col-xs-12">
+                                        289.00 บาท
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    <!-- <a href="/shop/1/view/6">
+                        <p><img src="/images/product/1487300072.jpg" height="250" width="100%" id="img-product-shop"></p>
+                        <p id="name-product-shop" maxlength="10"> 2.4Ghz Mini portable Wireless Optical Gaming Mouse Mice For PC Laptop Gray</p>
+                        <p id="price-product-shop">289.00</p>
+                    </a> -->
+                </li>  
+                            <li class="col-lg-4 col-sm-4">
+                    <a href="http://localhost:8000/shop/1/view/7">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="./F-Commerce_files/1487300218.jpg" height="250" width="100%" id="img-product-shop">
+                                    </div>
+                                </div>
+                                <div class="row" id="name-product-shop">
+                                    <div class="col-xs-12 col-sm-12">
+                                                                            Tsunami Breathing Light 6D Optical Gaming Mouse (G...
+                                                                        </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row" id="price-product-shop">
+                                    <div class="col-xs-12">
+                                        199.00 บาท
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    <!-- <a href="/shop/1/view/7">
+                        <p><img src="/images/product/1487300218.jpg" height="250" width="100%" id="img-product-shop"></p>
+                        <p id="name-product-shop" maxlength="10">Tsunami Breathing Light 6D Optical Gaming Mouse (GM-03)</p>
+                        <p id="price-product-shop">199.00</p>
+                    </a> -->
+                </li>  
+                            <li class="col-lg-4 col-sm-4">
+                    <a href="http://localhost:8000/shop/1/view/8">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="./F-Commerce_files/1487300305.jpg" height="250" width="100%" id="img-product-shop">
+                                    </div>
+                                </div>
+                                <div class="row" id="name-product-shop">
+                                    <div class="col-xs-12 col-sm-12">
+                                                                             Tsunami GK-09 Alloy Panel Backlight Gaming USB Wi...
+                                                                        </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row" id="price-product-shop">
+                                    <div class="col-xs-12">
+                                        299.00 บาท
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    <!-- <a href="/shop/1/view/8">
+                        <p><img src="/images/product/1487300305.jpg" height="250" width="100%" id="img-product-shop"></p>
+                        <p id="name-product-shop" maxlength="10"> Tsunami GK-09 Alloy Panel Backlight Gaming USB Wired Keyboard Gray</p>
+                        <p id="price-product-shop">299.00</p>
+                    </a> -->
+                </li>  
+                            <li class="col-lg-4 col-sm-4">
+                    <a href="http://localhost:8000/shop/1/view/9">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="./F-Commerce_files/1487300383.jpg" height="250" width="100%" id="img-product-shop">
+                                    </div>
+                                </div>
+                                <div class="row" id="name-product-shop">
+                                    <div class="col-xs-12 col-sm-12">
+                                                                             Marvo เมาส์เกมส์มิ่ง รุ่น M915/M315 + แผ่นรองเม้า...
+                                                                        </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row" id="price-product-shop">
+                                    <div class="col-xs-12">
+                                        309.00 บาท
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    <!-- <a href="/shop/1/view/9">
+                        <p><img src="/images/product/1487300383.jpg" height="250" width="100%" id="img-product-shop"></p>
+                        <p id="name-product-shop" maxlength="10"> Marvo เมาส์เกมส์มิ่ง รุ่น M915/M315 + แผ่นรองเม้าส์ (สีดำ)</p>
+                        <p id="price-product-shop">309.00</p>
+                    </a> -->
+                </li>  
+                        </ul>
+        <div class="col-md-4 col-md-offset-5 col-xs-5 col-xs-offset-4 col-sm-4 col-sm-offset-5">
+            <div class="pagination"> <ul class="pagination">
+        
+                    <li class="disabled"><span>«</span></li>
+        
+        
+                    
+            
+            
+                                                                        <li class="active"><span>1</span></li>
+                                                                                <li><a href="http://localhost:8000/shop/1?page=2">2</a></li>
+                                                        
+        
+                    <li><a href="http://localhost:8000/shop/1?page=2" rel="next">»</a></li>
+            </ul>
+ </div>
+        </div>
+        </nav>
+    </div>
+        
+                    
+                <!-- /.panel panel-default -->    
+                </div>
+            <!-- /.col-md-12 -->     
+            </div>
+        <!-- /.row -->    
+        </div>
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="./F-Commerce_files/jquery.min.js.ดาวน์โหลด"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="./F-Commerce_files/bootstrap.min.js.ดาวน์โหลด"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="./F-Commerce_files/metisMenu.min.js.ดาวน์โหลด"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="./F-Commerce_files/sb-admin-2.js.ดาวน์โหลด"></script>    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#selectType").click(function(){
+                var userID = 1.val();
+                $.ajax({
+                    url: "/shop/1/select-producttype",
+                    type: 'GET',
+                    $data: {
+                        id: userID
+                    },
+                    success: function(data){
+                        console.log(data);
+                    }
+                });
+            });
+        });
+    </script>
+
+</body></html>
